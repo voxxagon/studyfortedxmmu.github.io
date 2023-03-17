@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>TEDxMMU</title>
+</head>
+<body>
+    <div>
+        <header>
+            <nav class="nav-bar">
+                <div class="nav-branding"><a href="index.html"><img src="images/logo-white.png" alt=""></a></div>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#section-1">Home</a></li>
+                    <li class="nav-item"><a href="#section-2">About</a></li>
+                    <li class="nav-item"><a href="#section-3">Location</a></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <script>
+                    const hamburger = document.querySelector(".hamburger");
+                    const navMenu = document.querySelector(".nav-menu");
+            
+                    hamburger.addEventListener("click", () => {
+                        hamburger.classList.toggle("active");
+                        navMenu.classList.toggle("active");
+                    })
+            
+                    document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", ()=> {
+                        hamburger.classList.remove("active");
+                        navMenu.classList.remove("active");
+                    }))
+                </script>
+            </nav>
+        </header>
+    </div>
+
+    <div class="flex-container" style="height: 80vh;" id="section-1">
+        <video class="main-vid" poster="#" autoplay playsinline muted loop>
+            <source src="images/network.mp4" type="video/webm">
+        </video>
+        <h1 class="center-h1"><img src="images/logo-white.png"></h1>
+    </div>
+
+    <div style="height: 65vh; background-color: white;" id="section-2">
+        <br><br><br><br><br>
+        <h1 class="white-space ted-red header">About</h1>
+        <br><br>
+        <p class="white-space description">TEDx is a grassroots initiative, created in the spirit of TED’s overall mission to research and discover “ideas worth spreading.” TEDx brings the spirit of TED to local communities around the globe through TEDx events. These events are organized by passionate individuals who seek to uncover new ideas and to share the latest research in their local areas that spark conversations in their communities. TEDx events include live speakers and recorded TED Talks, and are organized independently under a free license granted by TED. These events are not controlled by TED, but event organizers agree to abide by TED format, and are offered guidelines for curation, speaker coaching, event organizing and more.</p>
+    </div>
+    <div class="flex-container" style="height: 30vh; background-color: white;" id="section-2">
+        <div style="flex:50%"><img style="height:100%;width: 100%;"src="images/mmu.jpg"></div>
+        <div style="flex:50%"><img style="height:100%;width: 100%;"src="images/mmustudent-2.jpg"></div>
+        <div style="flex:50%"><img style="height:100%;width: 100%;"src="images/mmu-2.jpg"></div>
+    </div>
+
+    <div class="flex-container" style="height: 80vh; background-color: white;" id="section-3">
+        <div style="flex:50%">
+            <br><br><br><br><br>
+            <h1 class="white-space ted-red header">Location</h1>
+            <br><br>
+            <p class="white-space description">Multimedia University (MMU)<br>Jalan Multimedia<br>63100 Cyberjaya, Selangor<br>Malaysia<br>Phone: 000000000<br>Official Website: www.mmu.edu.my</p>
+        </div>
+        <div style="flex:50%;">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.610460307871!2d101.63971171531843!3d2.9277768552887022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cdb6e4a9d3b7a1%3A0xd0f74e8ad10f1129!2sMultimedia%20University%20-%20MMU%20Cyberjaya!5e0!3m2!1sen!2smy!4v1679020169024!5m2!1sen!2smy" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="flex-container" style="height: 15vh; background-color: black;" id="#">
+        <div style="flex:50%"><img style="height:65%; text-align: center; padding-top: 5vh;"src="images/ted-idea.png"></div>
+        <div style="flex:50%"><p style="color: white; padding-top: 5vh; font-size: 10px;font-family: Cambria;">TED is a nonpartisan nonprofit devoted to spreading ideas, usually in the form of short, powerful talks. TED began in 1984 as a conference where Technology, Entertainment and Design converged, and today covers almost all topics — from science to business to global issues — in more than 110 languages. Meanwhile, independently run TEDx events help share ideas in communities around the world.</p></div>
+    </div>
+
+</body>
+</html>
